@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9c7ff28a-88e1-46b5-bd9d-3e128c9a9dbb" name="默认变更列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/firebg/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/firebg/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/firebg/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/locales/en/translation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/locales/zh/translation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/firepoint/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/firepoint/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/firepoint/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/locales/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/locales/resources.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/locales/zh.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/FDT@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/FireDAO@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/Flame.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/TeamManifest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/Youtube@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/discord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/fire_icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/fire_icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/ios-flame.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/medium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/page1title2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/reddit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/telegram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/tiktok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/FAQ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/TeamManifest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/daoHome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/roadMap.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="75fbsvpu" />
+  </component>
+  <component name="ProjectId" id="2H3rdpdceiEiKRsp1jxiI5hiHzw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/imgs" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\公司项目\fireDAO\src\imgs" />
+      <recent name="D:\公司项目\fireDAO\src\view" />
+      <recent name="D:\公司项目\fireDAO\public\locales\zh" />
+      <recent name="D:\公司项目\fireDAO\public\locales\en" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\公司项目\fireDAO\src\imgs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="9c7ff28a-88e1-46b5-bd9d-3e128c9a9dbb" name="默认变更列表" comment="" />
+      <created>1667524701001</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667524701001</updated>
+      <workItem from="1667524704788" duration="5043000" />
+      <workItem from="1667611091735" duration="4723000" />
+      <workItem from="1667783565347" duration="3005000" />
+      <workItem from="1667870085183" duration="595000" />
+      <workItem from="1667955968167" duration="8088000" />
+      <workItem from="1668043147172" duration="10531000" />
+      <workItem from="1668128628006" duration="1807000" />
+      <workItem from="1668215737177" duration="600000" />
+      <workItem from="1668477969850" duration="1693000" />
+      <workItem from="1668561719611" duration="1827000" />
+      <workItem from="1668646828454" duration="595000" />
+      <workItem from="1668733490128" duration="640000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
