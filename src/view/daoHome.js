@@ -1,11 +1,17 @@
 import React, {useEffect, useRef, useState} from 'react';
 import styled from "styled-components";
-import logo from "../imgs/logo.png"
-import firedao from "../imgs/FireDAO@2x.png"
-import Flame from "../imgs/Flame.gif"
+import logo from "../imgs/logo.webp"
+import firedao from "../imgs/FireDAO@2x.webp"
+import OnChain from "../imgs/On-chain Identity@2x.webp"
+import OffChain from "../imgs/Off-chain Life@2x.webp"
+import num_2 from "../imgs/2@2x.webp"
+import num_3 from "../imgs/3@2x.webp"
+import num_7 from "../imgs/7@2x.webp"
+import num_x from "../imgs/X@2x.webp"
 import bg1 from "../imgs/bg1.webp"
 import bg3 from "../imgs/bg3.webp"
 import bg4 from "../imgs/bg4.webp"
+import bg4t from "../imgs/bg4-2.webp"
 import bg5 from "../imgs/bg5.webp"
 import bg6 from "../imgs/bg6.webp"
 import bg7 from "../imgs/bg7.webp"
@@ -17,11 +23,19 @@ import bg12 from "../imgs/bg12.webp"
 import bg13 from "../imgs/bg13.webp"
 import {useTranslation} from 'react-i18next'
 import fireIcon1 from "../imgs/fire_icon1.webp"
-import fireIcon2 from "../imgs/fire_icon2.png"
-import flameIcon from "../imgs/ios-flame.png"
+import fireIcon2 from "../imgs/fire_icon2.webp"
+import flameIcon from "../imgs/ios-flame.webp"
 import {useNavigate} from 'react-router-dom'
 import Footer from "../components/footer.js"
 import Header from "../components/header";
+import icon2 from "../imgs/twitter@2x.webp";
+import icon3 from "../imgs/telegram@2x.webp";
+import icon4 from "../imgs/facebook@2x.webp";
+import icon5 from "../imgs/TikTok@2x.webp";
+import icon6 from "../imgs/Youtube@2x.webp";
+import icon7 from "../imgs/reddit@2x.webp";
+import icon8 from "../imgs/medium@2x.webp";
+import icon9 from "../imgs/discord-fill@2x.webp";
 function DaoHome(props) {
     const {t, i18n} = useTranslation();
     const changeLanguage = (lng) => {
@@ -60,7 +74,7 @@ function DaoHome(props) {
 
       .sub-title {
         font-size: 40px;
-        font-family: PingFangSC-Semibold, PingFang SC;
+        font-family: PingFangSC-Semibold, PingFang SC,sans-serif;
         font-weight: 600;
         color: #FFFFFF;
         line-height: 56px;
@@ -80,7 +94,7 @@ function DaoHome(props) {
 
       .page-title {
         text-align: center;
-        font-family: Fontquan-XinYilogoTi-Regular, Fontquan-XinYilogoTi;
+        font-family: Fontquan-XinYilogoTi-Regular, Fontquan-XinYilogoTi,sans-serif;
 
         strong {
           font-size: 40px;
@@ -129,22 +143,31 @@ function DaoHome(props) {
         align-items: center;
         position: relative;
         justify-content: center;
+        span{
+          background: linear-gradient(225deg, #FFB301 0%, #D50224 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-family: Fontquan-XinYilogoTi-Regular, Fontquan-XinYilogoTi,sans-serif;
+          position: absolute;
+          font-size: 20px;
+          left: calc(50% - 7px);
+          top: 40%;
+        }
 
         .icon {
           width: 40px;
         }
 
-        span {
-          position: absolute;
-          left: calc(50% - 5px);
-          top: 50%;
-        }
       }
 
       .page1 {
+        background: black;
         background-image: url(${bg1});
-        background-size: 100% 100%;
-        padding-top: calc(2% + 100px);
+
+        background-size: 100% 90%;
+        background-repeat: no-repeat;
+        padding-top: calc(1% + 100px);
+        padding-bottom: 0em;
         text-align: center;
         position: relative;
 
@@ -160,17 +183,25 @@ function DaoHome(props) {
 
         .title2 {
           font-size: 1.8em;
-          margin: 2em auto 1em;
+          margin:1em auto 1em;
           width: 76%;
           line-height: 40px;
         }
 
         .page1-content {
           width: 60%;
-          margin: 3em auto;
+          margin: 50vh auto 3em;
           line-height: 28px;
           font-size: 1.1em;
+          font-family: Roboto-Bold,Roboto,sans-serif;
         }
+    
+      }
+
+      .page2 {
+        background: #000;
+        background-size: 100% 100%;
+        padding-top: 3em;
 
         .btn-box {
           display: flex;
@@ -190,6 +221,11 @@ function DaoHome(props) {
             background: none;
             color: #fff;
             font-size: 18px;
+            a{
+              text-decoration: none;
+              color: #fff;
+
+            }
           }
 
           .btn-item:nth-child(2n) {
@@ -198,32 +234,62 @@ function DaoHome(props) {
 
           .btn-item:last-child {
             margin-right: 0;
+          
           }
 
         }
+        .subbtn-box{
+          width: 100%;
+          text-align: center;
+        }
+        .icon-list {
+          display: flex;
+          justify-content: space-between;
+          width: 40%;
+          max-width: 600px;
+          margin:  4em auto 0;
+          a {
+            cursor: pointer;
+            &:nth-child(n+2) {
+              margin-left: 14px;
+            }
+          }
 
+          .icon {
+
+            width: 34px;
+            height: 34px;
+
+            &:nth-child(n+2) {
+              margin-left: 14px;
+            }
+          }
+        }
         .sub-btn-box {
           width: 354px;
           height: 84px;
-          border-radius: 30px 2px 30px 2px;
-          margin: 5em auto;
+          border-radius: 5px 30px 5px 30px ;
           background: linear-gradient(180deg, rgba(255, 179, 15, 1), rgba(213, 2, 34, 1));
           box-shadow: 0px 0px 10px 10px rgba(255, 61, 61, 0.5);
           border: none;
           padding: 0;
           overflow: hidden;
-
+          margin: 5em auto;
+          
           .sub-btn-content {
             background: #000;
             width: 350px;
             height: 80px;
-            border-radius: 30px 2px 30px 2px;
+            background: linear-gradient(315deg, #D50224 0%, #FFB301 100%);
+            border-radius: 5px 30px 5px 30px ;
             margin: 2px 2px;
-
+            a{
+              text-decoration: none;
+            }
             .sub-btn {
               width: 350px;
               height: 80px;
-              border-radius: 30px 2px 30px 2px;
+              border-radius: 5px 30px 5px 30px ;
               cursor: pointer;
               color: #fff;
               display: flex;
@@ -231,11 +297,7 @@ function DaoHome(props) {
 
               flex-direction: column;
               justify-content: center;
-              font-family: PingFangSC-Regular, PingFang SC;
-              font-weight: 400;
-              background: linear-gradient(270deg, #FFB301 0%, #D50224 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
+
 
               strong {
                 font-size: 22px;
@@ -245,15 +307,6 @@ function DaoHome(props) {
           }
 
         }
-
-      }
-
-      .page2 {
-        background: #000;
-        background-size: 100% 100%;
-        padding-top: 3em;
-
-
         .btn-boxs {
           display: flex;
           justify-content: center;
@@ -303,79 +356,25 @@ function DaoHome(props) {
         background-size: 100% 100%;
         padding: 3em 0;
 
-        .coin-detail-box {
-          display: flex;
-          width: 80%;
-          margin: 0 auto;
-          justify-content: space-between;
 
-          .coin-detail-name {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 26px;
-            font-family: PingFangSC-Semibold, PingFang SC;
-            font-weight: 600;
-          }
-
-          .coin-detail-item {
-            background: rgba(255, 255, 255, 0.17);
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            padding: 10px;
-            overflow: hidden;
-            position: relative;
-
-            .coin-detail-bg {
-              z-index: 2;
-              width: 50%;
-              height: 50%;
-              position: absolute;
-              top: 0;
-              right: 0;
-              background: linear-gradient(135deg, rgba(213, 2, 34, 1), rgba(255, 179, 15, 1));
-            }
-
-            .coin-detail {
-
-              position: relative;
-              z-index: 3;
-              background: #000;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              width: 160px;
-              height: 160px;
-              border-radius: 50%;
-              font-family: Fontquan-XinYilogoTi-Regular, Fontquan-XinYilogoTi;
-              font-size: 30px;
-
-              strong {
-                font-size: 40px;
-                line-height: 48px;
-              }
-            }
-          }
-        }
 
         .content-list {
           display: flex;
           justify-content: center;
           width: 80%;
-          margin: 1em auto;
+          margin: 5em auto 3em;
           .content-item {
             text-align: center;
             &:nth-child(n+2){
               margin-left: 5em;
             }
-
-
+           
             .name {
+              margin-top: 0.5em;
               height: 60px;
               line-height: 60px;
               font-size: 34px;
-              font-family: PingFangSC-Bold, PingFang SC;
+              font-family: PingFangSC-Bold, PingFang SC,sans-serif;
               font-weight: bold;
               color: #FFFFFF;
             }
@@ -383,7 +382,8 @@ function DaoHome(props) {
             .content {
               width: 100%;
               font-size: 16px;
-              font-family: PingFangSC-Semibold, PingFang SC;
+              margin-top: 2em;
+              font-family: PingFangSC-Semibold, PingFang SC,sans-serif;
               font-weight: 600;
               color: #FFFFFF;
               line-height: 26px;
@@ -394,10 +394,15 @@ function DaoHome(props) {
 
       .page4 {
         overflow: hidden;
-        background: url("${bg4}");
+        background: url("${bg4t}");
         background-size: 100% 100%;
         padding-bottom: 3em;
-
+        .page-title{
+          background: linear-gradient(225deg, #FFB301 0%, #D50224 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-family: Fontquan-XinYilogoTi-Regular, Fontquan-XinYilogoTi,sans-serif;
+        }
         .intro {
           margin: 3em auto;
           text-align: center;
@@ -407,72 +412,50 @@ function DaoHome(props) {
           color: #FFFFFF;
           line-height: 30px;
           font-weight: bold;
+          
         }
 
         .content-list {
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
-
+          width: 80vw;
+          margin: 0 auto;
           .content-item {
-            width: 26%;
+            width: 45%;
             text-align: center;
             margin-left: 4%;
             margin-top: 3em;
-
-            &:nth-child(3n + 1) {
+            background: rgba(0,0,0,0.4);
+            border-radius: 30px;
+            padding: 40px 30px;
+            border: 1px solid rgba(255,255,255,0.2);
+            &:nth-child(2n + 1) {
               margin-left: 0;
             }
 
             .content-item-title {
-              font-size: 40px;
-              font-family: Fontquan-XinYilogoTi-Regular, Fontquan-XinYilogoTi, serif;
-              font-weight: 400;
-              color: #FFFFFF;
-              padding-bottom: 1em;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-
-              .icon {
-                width: 40px;
-                height: 40px;
+     
+              img {
+                width: 30px;
+                height: 30px;
+                margin-bottom: 40px;
               }
             }
 
-            .content-item-number {
-              font-size: 30px;
-              font-family: Fontquan-XinYilogoTi-Regular, Fontquan-XinYilogoTi, serif;
-              margin: 1em 0;
-            }
+        
 
-            .content-item-intro {
-              font-size: 22px;
-              font-family: PingFangSC-Semibold, PingFang SC, serif;
-              padding-bottom: 1em;
-            }
-
-            .nft-type {
-              width: 120px;
-              height: 40px;
-              border-radius: 20px;
-              border: 1px solid #FFFFFF;
-              line-height: 40px;
-              font-size: 20px;
-              margin: 0 auto 1em;
-            }
 
             .content-item-detail {
               text-align: left;
-              line-height: 22px;
+              line-height: 30px;
             }
           }
         }
       }
-
       .page5 {
         overflow: hidden;
-        background-image: url("${bg5}");
+        background-image: url("${bg4}");
         background-size: 100% 100%;
         padding-bottom: 3em;
 
@@ -525,7 +508,7 @@ function DaoHome(props) {
       }
 
       .page6 {
-        background-image: url("${bg6}");
+        background-image: url("${bg5}");
         background-size: 100% 100%;
         padding-bottom: 3em;
 
@@ -535,8 +518,8 @@ function DaoHome(props) {
 
           .col {
             background: rgba(255, 255, 255, 0.1);
-            padding: 16px 20px;
-
+            padding: 30px 20px;
+            font-family: Roboto-Bold,Roboto,sans-serif;
             border-radius: 10px;
             margin-top: 4px;
             display: flex;
@@ -546,7 +529,7 @@ function DaoHome(props) {
 
           .table-header {
             font-size: 22px;
-            color: #eee;
+            color: #bbb;
             padding: 20px 20px;
             display: flex;
             font-family: PingFangSC-Semibold, PingFang SC, serif !important;
@@ -555,6 +538,7 @@ function DaoHome(props) {
             .col {
               width: 33.3%;
               background: none;
+              
             }
           }
 
@@ -565,7 +549,12 @@ function DaoHome(props) {
             .col-box {
               margin-left: 4px;
             }
-
+            .col{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              
+            }
             > div {
               width: 33.3%;
 
@@ -576,7 +565,7 @@ function DaoHome(props) {
 
               .col {
                 width: 100%;
-
+         
               }
             }
           }
@@ -584,7 +573,7 @@ function DaoHome(props) {
       }
 
       .page7 {
-        background-image: url("${bg7}");
+        background-image: url("${bg6}");
         background-size: 100% 100%;
 
 
@@ -597,9 +586,14 @@ function DaoHome(props) {
           .list-item {
             width: 33.3%;
             margin-top: 5em;
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .name {
+              max-width: 300px;
               margin-top: 1.2em;
+              line-height: 40px;
+              font-family: Roboto-Bold, Roboto,sans-serif;
               font-size: 22px;
               text-align: center;
             }
@@ -608,40 +602,7 @@ function DaoHome(props) {
       }
 
       .page8 {
-        background-image: url("${bg8}");
-        background-size: 100% 100%;
-
-        .content-list {
-          display: flex;
-          width: 80vw;
-          flex-wrap: wrap;
-          margin: 0 auto;
-
-          .list-item {
-            width: 25%;
-
-            &:nth-child(n+5) {
-              margin-top: 3em;
-            }
-
-            .number {
-              text-align: center;
-              margin-top: 1em;
-              font-family: Fontquan-XinYilogoTi-Regular, Fontquan-XinYilogoTi, serif;
-              font-size: 36px;
-            }
-
-            .name {
-              margin-top: 1.2em;
-              font-size: 22px;
-              text-align: center;
-            }
-          }
-        }
-      }
-
-      .page9 {
-        background-image: url("${bg9}");
+        background-image: url("${bg7}");
         background-size: 100% 100%;
 
         .content-list {
@@ -652,11 +613,54 @@ function DaoHome(props) {
 
           .list-item {
             width: 20%;
-            margin-top: 4em;
+            padding: 0 10px;
+            margin-top: 2em;
+
+            .number {
+              text-align: center;
+              margin-top: 1em;
+              font-size: 36px;
+              background: linear-gradient(225deg, #FFB301 0%, #D50224 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-family: Fontquan-XinYilogoTi-Regular, Fontquan-XinYilogoTi,sans-serif;
+            }
 
             .name {
               margin-top: 1.2em;
+              font-family: Roboto-Bold, Roboto,sans-serif;
               font-size: 22px;
+              text-align: center;
+              line-height: 40px;
+
+            }
+        
+          }
+        }
+      }
+
+      .page9 {
+        background-image: url("${bg8}");
+        background-size: 100% 100%;
+
+        .content-list {
+          display: flex;
+          width: 80vw;
+          flex-wrap: wrap;
+          margin: 0 auto;
+
+          .list-item {
+            width: 16.66%;
+            margin-top: 4em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .name {
+              max-width: 180px;
+              margin-top: 1.2em;
+              font-family: Roboto-Bold,Roboto,sans-serif;
+              font-size: 20px;
+              line-height: 40px;
               text-align: center;
             }
           }
@@ -664,7 +668,7 @@ function DaoHome(props) {
       }
 
       .page10 {
-        background-image: url("${bg10}");
+        background-image: url("${bg9}");
         background-size: 100% 100%;
 
         .content-list {
@@ -695,7 +699,7 @@ function DaoHome(props) {
       }
 
       .page11 {
-        background-image: url("${bg11}");
+        background-image: url("${bg10}");
         background-size: 100% 100%;
         padding-bottom: 3em;
 
@@ -724,7 +728,7 @@ function DaoHome(props) {
       }
 
       .page12 {
-        background-image: url("${bg12}");
+        background-image: url("${bg11}");
         background-size: 100% 100%;
 
         p {
@@ -746,18 +750,21 @@ function DaoHome(props) {
             .name {
               font-size: 30px;
               text-align: center;
+              img{
+                width: 290px;
+              }
             }
 
             .content {
               margin-top: 2em;
-              line-height: 24px;
+              line-height: 30px;
             }
           }
         }
       }
 
       .page13 {
-        background-image: url("${bg13}");
+        background-image: url("${bg12}");
         background-size: 100% 100%;
         padding-bottom: 3em;
 
@@ -785,7 +792,7 @@ function DaoHome(props) {
 
             .content {
               font-size: 18px;
-              text-align: justify;
+              text-align: center;
               line-height: 24px;
               margin-top: 1em;
             }
@@ -818,138 +825,72 @@ function DaoHome(props) {
                     {t('page1title2part2')}
                 </h2>
 
-                <div className="btn-box">
-                    <button className="btn-item">
-                        {t('whitepaper')}
-                    </button>
-                    <button className="btn-item">
-                        Deck
-                    </button>
-                    <button className="btn-item">
-                        Github
-                    </button>
-                    <button className="btn-item">
-                        Forum
-                    </button>
-                </div>
-                <button className="sub-btn-box">
-                    <div className="sub-btn-content">
-                        <div className="sub-btn">
-                            <strong>  {t('launch')}APP</strong>
-                            {/*(BNB{t('testnet')})*/}
-                            <div>  {t('Enter the Holy Fire Altar')}
-                            </div>
-                        </div>
-                    </div>
-                </button>
+
+
                 <div className="page1-content">
                     {t('page1content')}
                 </div>
+
                 <canvas id="canvas"/>
             </div>
             <div className="page-box page2">
-                {/*<div className="btn-boxs">*/}
-                {/*    <button className="btn">*/}
+                <div className="subbtn-box">
+                    <button className="sub-btn-box">
+                        <div className="sub-btn-content">
+                            <a href="http://apptest.firedao.co/">
+                                <div className="sub-btn">
+                                    <strong>  {t('launch')}APP</strong>
+                                    {/*(BNB{t('testnet')})*/}
+                                    <div>  {t('Enter the Holy Fire Altar')}
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </button>
+                </div>
+                <div className="btn-box">
+                    <button className="btn-item" onClick={()=>{goPage("/Whitepaper")}}>
+                        {t('whitepaper')}
+                    </button>
+                    <button className="btn-item"  onClick={()=>{goPage("/Deck")}}>
+                        Deck
+                    </button>
+                    <button className="btn-item">
+                        <a href="https://github.com/FireDAOlab" target="_blank">
+                            Github
+                        </a>
+                    </button>
+                    <button className="btn-item">
+                        <a href="http://forum.firedao.co/" target="_blank">
+                            Forum
+                        </a>
 
-                {/*        <div>{t('Collect FireSeed , Pass FireSeed')}</div>*/}
-                {/*    </button>*/}
-                {/*    <button className="btn">*/}
-                {/*        <strong>{t('Enter the Soul Casting Altar')}</strong>*/}
-                {/*        <div>{t('Burn FireSeed, Cast FireSoul')}</div>*/}
-                {/*    </button>*/}
-                {/*</div>*/}
+                    </button>
+                </div>
                 <div className="sub-title">
                     <img src={fireIcon1} alt="" className="icon"/>
                     <strong>{t('Social Media')}</strong>
                 </div>
-                <div>
-                    <div className="btn-boxs">
-                        <button className="btn2">
-                            Twitter
-                        </button>
-                        <button className="btn2">
-                            Telegram
-                        </button>
-                        <button className="btn2">
-                            Facebook
-                        </button>
-                        <button className="btn2">
-                            Tiktok
-                        </button>
-                    </div>
-                    <div className="btn-boxs">
-                        <button className="btn2">
-                            Youtub
-                        </button>
-                        <button className="btn2">
-                            Reddit
-                        </button>
-                        <button className="btn2">
-                            Medium
-                        </button>
-                        <button className="btn2">
-                            Discord
-                        </button>
-                    </div>
+                <div className="icon-list">
+                    <a href="https://twitter.com/FireDAOlab" target="_blank">
+                        <img className="icon" src={icon2}  alt=""/></a>
+                    <a href="https://t.me/FireDAOEN" target="_blank" ><img className="icon" src={icon3} alt=""/></a>
+                    <a href="https://facebook.com/FireDAO" target="_blank"><img className="icon" src={icon4}
+                                                                                alt=""/></a>
+                    <a href="https://www.tiktok.com/@firedaoofficial" target="_blank"><img className="icon"
+                                                                                           src={icon5} alt=""/></a>
+                    <a href="https://www.youtube.com/@FireDAOlab" target="_blank"><img className="icon"
+                                                                                       src={icon6} alt=""/></a>
+                    <a href="https://www.reddit.com/r/FireDAO" target="_blank"><img className="icon" src={icon7}
+                                                                                    alt=""/></a>
+                    <a href="https://medium.com/@FireDAOlab" target="_blank"><img className="icon" src={icon8}
+                                                                                  alt=""/></a>
+                    <a href="https://discord.gg/HjtHk5j6nG" target="_blank"><img className="icon" src={icon9}
+                                                                                 alt=""/></a>
                 </div>
             </div>
             <div className="page-box page3">
-                <div className="coin-detail-box">
-                    <div className="coin-detail-item-box">
-                        <div className="coin-detail-item">
-                            <div className="coin-detail-bg"></div>
 
-                            <div className="coin-detail">
-                                {/*<strong>8,888</strong>*/}
-                                <strong>0</strong>
-                                <div>{t('pieces')}</div>
-                            </div>
-                        </div>
-                        <div className="coin-detail-name">
-                            {t('Collect FireSeed')}
-                        </div>
-                    </div>
-                    <div className="coin-detail-item-box">
-                        <div className="coin-detail-item">
-                            <div className="coin-detail-bg"></div>
-                            <div className="coin-detail">
-                                {/*<strong>120.22K</strong>*/}
-                                <strong>0</strong>
-                                <div>{t('times')}</div>
-                            </div>
-                        </div>
-                        <div className="coin-detail-name">
-                            {t('Pass FireSeed')}
-                        </div>
-                    </div>
-                    <div className="coin-detail-item-box">
-                        <div className="coin-detail-item">
-                            <div className="coin-detail-bg"></div>
-
-                            <div className="coin-detail">
-                                {/*<strong>1.88M</strong>*/}
-                                <strong>0</strong>
-                                <div>{t('pieces')}</div>
-                            </div>
-                        </div>
-                        <div className="coin-detail-name">
-                            {t('Cast FireSoul')}
-                        </div>
-                    </div>
-                    <div className="coin-detail-item-box">
-                        <div className="coin-detail-item">
-                            <div className="coin-detail-bg"></div>
-                            <div className="coin-detail">
-                                {/*<strong>10K</strong>*/}
-                                <strong>0</strong>
-                                <div>{t('pieces')}</div>
-                            </div>
-                        </div>
-                        <div className="coin-detail-name">
-                            {t('Cast FID')}
-                        </div>
-                    </div>
-                </div>
                 <div className="sub-title">
                     <img src={fireIcon1} alt="" className="icon"/>
                     <strong>{t('FireDAO Philosophy')}</strong>
@@ -1012,298 +953,55 @@ function DaoHome(props) {
                         <strong>{t('Economics of tokens')}</strong>
                     </div>
                     <div className="page-title">
-                        <span>-</span>
-                        <strong>3+1+6 {t('Model')}</strong>
-                        <span>-</span>
+                        <strong>3+2+7+X</strong>
+                        <strong style={{marginLeft:"16px"}}>{t('Model')}</strong>
                     </div>
                     <div className="intro">
                         {t('page4Intro')}
                     </div>
-                    <div className="page-title">
-                        <span>-</span>
-                        <strong> {t('3 Types of Ecological Tokens')}</strong>
-                        <span>-</span>
-                    </div>
+
                     <div className="content-list">
                         <div className="content-item">
                             <div className="content-item-title">
-
-                            </div>
-                            <div className="content-item-number">
-                                {t('1 Billions')}
-                            </div>
-                            <div className="content-item-intro">
-                                {t('FireDAO Ecological Governance Token')}
-                            </div>
-                            <div className="nft-type">
-                                ERC20
+                                <img src={num_3} alt=""/>
                             </div>
                             <div className="content-item-detail">
-                                {t('page4content1')}
+                                3 refers to three types of ecological tokens: FireDAO ecological governance token FDT, FireDAO ecological incentive token FLM and FireDAO ecological identity token FireSeed. FDT is the Governance Token in the FireDAO ecosystem, the core token of the entire ecosystem. It is embedded with the core governance rights of the entire ecosystem . The entire ecosystem is built around FDT.
                             </div>
                         </div>
                         <div className="content-item">
                             <div className="content-item-title">
+                                <img src={num_2} alt=""/>
+                            </div>
 
-                            </div>
-                            <div className="content-item-number">
-                                {t('1 Billions')}
-                            </div>
-                            <div className="content-item-intro">
-                                {t('FireDAO Ecological Incentive Token')}
-                            </div>
-                            <div className="nft-type">
-                                ERC1155
-                            </div>
                             <div className="content-item-detail">
-                                {t('page4content2')}
+                                2 refers to two ecological Web3 IDs: the PID generated for casting FirePassport and the FID generated for casting FireSoul. These two IDs represent the Web3 identities of members of the FireDAO community. Those who have a PID are FireDAO’s probationary members, and those who have a FID are FireDAO’s official members.
                             </div>
                         </div>
                         <div className="content-item">
                             <div className="content-item-title">
-
-                            </div>
-                            <div className="content-item-number">
-                                {t('1 Billions')}
+                                <img src={num_7} alt=""/>
                             </div>
 
-                            <div className="content-item-intro">
-                                {t('FireDAO Ecological Identity Token')}
-                            </div>
-                            <div className="nft-type">
-                                ERC20
-                            </div>
+
                             <div className="content-item-detail">
-                                {t('page4content3')}
+                                7 refers to 7 types of Soul-binding tokens: SBT-001, SBT-002, SBT-003, SBT-004, SBT-005, SBT-006 and SBT-007, which are cast based on the ERC20 standard and record the different community activities and statistics of each official DAO member respectively.
+                            </div>
+                        </div>
+                        <div className="content-item">
+                            <div className="content-item-title">
+                                <img src={num_x} alt=""/>
+                            </div>
+
+
+                            <div className="content-item-detail">
+                                X refers to X types of Soul-binding medal - SBB. FireDAO will unite the entire crypto community to issue different types of SBB medals according to the on-chain activities of each wallet address, carry out various types of soul airdrops for SBB minting users, and ultimately allow the entire crypto ecosystem to participate in the global buildup of FireDAO.
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/*  page4-part2*/}
-                <div className="part2" style={{marginTop: "5em"}}>
-                    <div className="page-title">
-                        <span>-</span>
-                        <strong>{t('6 Soulbound Tokens')}</strong>
-                        <span>-</span>
-                    </div>
-                    <div className="sub-title"
-                    >
-                        FireSoul
-                    </div>
-                    <div className="nft-type">
-                        ERC721{t('extension')}
-                    </div>
-                    <div className="page-content" style={{marginTop: "3em"}}>
-                        <p>
-                            {t('page4part2content1')}
-                        </p>
-                        <p>
-                            {t('page4part2content2')}
-                        </p>
-                    </div>
-                </div>
-                {/*  page4-part3*/}
-                <div className="part3">
-                    <div className="page-title">
-                        <span>-</span>
-                        <strong>{t('1 Soulbound Account')}</strong>
-                        <span>-</span>
-                    </div>
-                    <div className="intro" style={{textAlign: "left"}}>
-                        {t('page4part3intro')}
-                    </div>
-                    <div className="content-list">
-                        <div className="content-item">
-                            <div className="content-item-title">
-                                <img src={flameIcon} alt="" className="icon"/>
-                                FD-SBT-001
-                            </div>
-                            <div className="content-item-detail">
-                                {t('FD-SBT-001')}
-                            </div>
-                        </div>
-                        <div className="content-item">
-                            <div className="content-item-title">
-                                <img src={flameIcon} alt="" className="icon"/>
-                                FD-SBT-002
-                            </div>
-                            <div className="content-item-detail">
-                                {t('FD-SBT-002')}
-                            </div>
-                        </div>
-                        <div className="content-item">
-                            <div className="content-item-title">
-                                <img src={flameIcon} alt="" className="icon"/>
-                                FD-SBT-003
-                            </div>
-                            <div className="content-item-detail">
-                                {t('FD-SBT-003')}
-                            </div>
-                        </div>
-                        <div className="content-item">
-                            <div className="content-item-title">
-                                <img src={flameIcon} alt="" className="icon"/>
-                                FD-SBT-004
-                            </div>
-                            <div className="content-item-detail">
-                                {t('FD-SBT-004')}
-                            </div>
-                        </div>
-                        <div className="content-item">
-                            <div className="content-item-title">
-                                <img src={flameIcon} alt="" className="icon"/>
-                                FD-SBT-005
-                            </div>
-                            <div className="content-item-detail">
-                                {t('FD-SBT-005')}
-                            </div>
-                        </div>
-                        <div className="content-item">
-                            <div className="content-item-title">
-                                <img src={flameIcon} alt="" className="icon"/>
-                                FD-SBT-006
-                            </div>
-                            <div className="content-item-detail">
-                                {t('FD-SBT-006')}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="page-box page5">
-                <div className="sub-title">
-                    <img src={fireIcon1} alt="" className="icon"/>
-                    <strong>{t('FDT Original release allocation')}</strong>
-                </div>
-                <div className="table-box">
-                    <div className="table-header">
-                        <div className="col1">
-                            {t('page5table.Distribution Type')}
-                        </div>
-                        <div className="col2">
-                            {t('page5table.Distribution Percentage')}
-                        </div>
-                        <div className="col3">
-                            {t('page5table.Distribution Quantity')}
-                        </div>
-                        <div className="col4">
-                            {t('page5table.Lock-up and Unlock Rules')}
-                        </div>
-                    </div>
-                    <div className="table-row">
-                        <div className="col1">
-                            {t('page5table.FireDAO Community Vault')}
-                        </div>
-                        <div className="col2">
-                            30%
-                        </div>
-                        <div className="col3">
-                            {t('page5table.3 billion')}
-                        </div>
-                        <div className="col4">
-                            {t('page5table.content1')}
-                        </div>
-                    </div>
-                    <div className="table-row">
-                        <div className="col1">
-                            {t('page5table.FireDAO Community Contributions Exchange')}
-                        </div>
-                        <div className="col2">
-                            20%
-                        </div>
-                        <div className="col3">
-                            {t('page5table.2 billion')}
-                        </div>
-                        <div className="col4">
-                            {t('page5table.content2')}
-                        </div>
-                    </div>
-                    <div className="table-row">
-                        <div className="col1">
-                            {t('page5table.FireDAO Community Ecological Guarantee Funds')}
-                        </div>
-                        <div className="col2">
-                            10%
-                        </div>
-                        <div className="col3">
-                            {t('page5table.1 billion')}
-                        </div>
-                        <div className="col4">
-                            {t('page5table.content3')}
-                        </div>
-                    </div>
-                    <div className="table-row">
-                        <div className="col1">
-                            {t('page5table.Community Consensus Mining Pool Issuance')}
-                        </div>
-                        <div className="col2">
-                            10%
-                        </div>
-                        <div className="col3">
-                            {t('page5table.1 billion')}
-                        </div>
-                        <div className="col4">
-                            {t('page5table.content4')}
-                        </div>
-                    </div>
-                    <div className="table-row">
-                        <div className="col1">
-                            {t('page5table.Founding and Managment Team')}
-                        </div>
-                        <div className="col2">
-                            15%
-                        </div>
-                        <div className="col3">
-                            {t('page5table.1.5 billion')}
-                        </div>
-                        <div className="col4">
-                            {t('page5table.content5')}
-                        </div>
-                    </div>
-                    <div className="table-row">
-                        <div className="col1">
-                            {t('page5table.Early-stage Contributors')}
-                        </div>
-                        <div className="col2">
-                            5%
-                        </div>
-                        <div className="col3">
-                            {t('page5table.500 millions')}
-                        </div>
-                        <div className="col4">
-                            {t('page5table.content6')}
-                        </div>
-                    </div>
-                    <div className="table-row">
-                        <div className="col1">
-                            {t('page5table.Fair Launch')}
-                        </div>
-                        <div className="col2">
-                            5%
-                        </div>
-                        <div className="col3">
-                            {t('page5table.500 millions')}
-                        </div>
-                        <div className="col4">
-                            {t('page5table.content7')}
-                        </div>
-                    </div>
-                    <div className="table-row">
-                        <div className="col1">
-                            {t('page5table.Liquid Injection')}
-                        </div>
-                        <div className="col2">
-                            5%
-                        </div>
-                        <div className="col3">
-                            {t('page5table.500 millions')}
-                        </div>
-                        <div className="col4">
-                            {t('page5table.content8')}
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <div className="page-box page6">
                 <div className="sub-title">
@@ -1313,28 +1011,36 @@ function DaoHome(props) {
                 <div className="content-table">
                     <div className="table-header">
                         <div className="col">
-                            {t('page6table.Tax Type')}
+                            {t('page6table.Category')}
                         </div>
                         <div className="col">
-                            {t('page6table.Distribution Category')}
+                            {t('page6table.Distribution Channel')}
                         </div>
                         <div className="col">
-                            {t('page6table.Distribution Percentage')}
+                            {t('page6table.Percentage')}
                         </div>
                     </div>
                     <div className="table-row">
                         <div className="col">
-                            {t('page6table.Transfer Tax')}
+                            <div className="row">
+                                {t('page6table.Transfer Tax')}
+                            </div>
+                            <div className="row">
+                                {t('page6table.Purchase Tax')}
+                            </div>
+                            <div className="row">
+                                {t('page6table.Sales Tax')}
+                            </div>
                         </div>
                         <div className="col-box">
                             <div className="col">
-                                1、{t('page6table.Third-level Referral Incentive')}
+                                {t('page6table.Third-level Referral Incentive')}
                             </div>
                             <div className="col">
-                                2、 {t('page6table.City-nodes Incentive')}
+                                {t('page6table.City-nodes Incentive')}
                             </div>
                             <div className="col">
-                                3、 {t('page6table.FireDAO Treasury')}
+                                {t('page6table.Rainbowcity Foundation Treasury')}
                             </div>
                         </div>
                         <div className="col-box">
@@ -1349,44 +1055,6 @@ function DaoHome(props) {
                             </div>
                         </div>
 
-                    </div>
-                    <div className="table-row">
-                        <div className="col">
-                            {t('page6table.Purchase Tax')}
-                        </div>
-                        <div className="col-box">
-                            <div className="col">
-                                1、{t('page6table.Third-level Referral Incentive')}
-                            </div>
-                            <div className="col">
-                                2、 {t('page6table.City-nodes Incentive')}
-                            </div>
-                            <div className="col">
-                                3、{t('page6table.FireDAO Treasury')}
-                            </div>
-                        </div>
-                        <div className="col-box">
-                            <div className="col">
-                                0.5%
-                            </div>
-                            <div className="col">
-                                4%
-                            </div>
-                            <div className="col">
-                                5%
-                            </div>
-                        </div>
-                    </div>
-                    <div className="table-row">
-                        <div className="col">
-                            {t('page6table.Sales Tax')}
-                        </div>
-                        <div className="col" style={{marginLeft: "4px"}}>
-                            {t('page6table.FireDAO Treasury')}
-                        </div>
-                        <div className="col" style={{marginLeft: "4px"}}>
-                            5%
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1467,7 +1135,7 @@ function DaoHome(props) {
                             <span>1</span>
                         </div>
                         <div className="number">
-                            <strong>20</strong>%
+                            <strong>15</strong>%
                         </div>
                         <div className="name">
                             {t('page8-listitem1')}
@@ -1491,7 +1159,7 @@ function DaoHome(props) {
                             <span>3</span>
                         </div>
                         <div className="number">
-                            <strong>5</strong>%
+                            <strong>15</strong>%
                         </div>
                         <div className="name">
                             {t('page8-listitem3')}
@@ -1503,7 +1171,7 @@ function DaoHome(props) {
                             <span>4</span>
                         </div>
                         <div className="number">
-                            <strong>10</strong>%
+                            <strong>5</strong>%
                         </div>
                         <div className="name">
                             {t('page8-listitem4')}
@@ -1515,7 +1183,7 @@ function DaoHome(props) {
                             <span>5</span>
                         </div>
                         <div className="number">
-                            <strong>5</strong>%
+                            <strong>15</strong>%
                         </div>
                         <div className="name">
                             {t('page8-listitem5')}
@@ -1527,7 +1195,7 @@ function DaoHome(props) {
                             <span>6</span>
                         </div>
                         <div className="number">
-                            <strong>15</strong>%
+                            <strong>10</strong>%
                         </div>
                         <div className="name">
                             {t('page8-listitem6')}
@@ -1551,10 +1219,22 @@ function DaoHome(props) {
                             <span>8</span>
                         </div>
                         <div className="number">
-                            <strong>20</strong>%
+                            <strong>5</strong>%
                         </div>
                         <div className="name">
                             {t('page8-listitem8')}
+                        </div>
+                    </div>
+                    <div className="list-item">
+                        <div className="index-box">
+                            <img src={fireIcon2} alt="" className="icon"/>
+                            <span>9</span>
+                        </div>
+                        <div className="number">
+                            <strong>10</strong>%
+                        </div>
+                        <div className="name">
+                            {t('page8-listitem9')}
                         </div>
                     </div>
                 </div>
@@ -1811,7 +1491,7 @@ function DaoHome(props) {
                 <div className="content-box">
                     <div className="content-item">
                         <div className="name">
-                            {t('On-chain Identity')}
+                            <img src={OnChain} alt=""/>
                         </div>
                         <div className="content">
                             {t('page12-content4')}
@@ -1819,7 +1499,7 @@ function DaoHome(props) {
                     </div>
                     <div className="content-item">
                         <div className="name">
-                            {t('Off-chain Life')}
+                            <img src={OffChain} alt=""/>
                         </div>
                         <div className="content">
                             {t('page12-content5')}

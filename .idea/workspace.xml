@@ -2,63 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c7ff28a-88e1-46b5-bd9d-3e128c9a9dbb" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/firebg/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/firebg/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/firebg/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/locales/en/translation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/locales/zh/translation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firepoint/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firepoint/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firepoint/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/locales/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/locales/resources.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n/locales/zh.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/FDT@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/FireDAO@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/Flame.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/TeamManifest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/Youtube@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/discord.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/fire_icon1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/fire_icon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/ios-flame.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/medium.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/page1title2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/reddit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/telegram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/tiktok.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgs/twitter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/FAQ.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/TeamManifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/daoHome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/roadMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Deck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/zh/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/zh/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/FireDAO@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/FireDAO@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/Youtube@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/Youtube@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg10.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg10.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg11.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg11.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg12.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg12.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg13.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg13.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg3.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg4.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg4.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg5.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg5.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg6.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg6.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg7.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg7.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg8.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg8.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/bg9.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/bg9.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/fire_icon1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/fire_icon1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/fire_icon1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/fire_icon1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/fire_icon2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/fire_icon2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imgs/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgs/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/FAQ.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FAQ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/daoHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/daoHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/roadMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/roadMap.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +52,9 @@
     <option name="directoryName" value="75fbsvpu" />
   </component>
   <component name="ProjectId" id="2H3rdpdceiEiKRsp1jxiI5hiHzw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -92,6 +69,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\WebStorm 2020.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -142,6 +120,14 @@
       <workItem from="1668561719611" duration="1827000" />
       <workItem from="1668646828454" duration="595000" />
       <workItem from="1668733490128" duration="640000" />
+      <workItem from="1673590276729" duration="1811000" />
+      <workItem from="1673659483414" duration="1189000" />
+      <workItem from="1673831386541" duration="616000" />
+      <workItem from="1674116686407" duration="2630000" />
+      <workItem from="1674178962535" duration="6776000" />
+      <workItem from="1674868190968" duration="7307000" />
+      <workItem from="1674954609950" duration="9030000" />
+      <workItem from="1675040259638" duration="1636000" />
     </task>
     <servers />
   </component>
